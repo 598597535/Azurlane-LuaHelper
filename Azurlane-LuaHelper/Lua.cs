@@ -12,7 +12,7 @@ namespace Azurlane
             {
                 Console.Write($"[+] {(tasks == Tasks.Decrypt ? "Decrypting" : tasks == Tasks.Encrypt ? "Encrypting" : tasks == Tasks.Decompile ? "Decompiling" : "Recompiling")} {Path.GetFileName(lua)}...");
 
-                var luaPath = Path.Combine(PathMgr.Environment(tasks == Tasks.Decrypt ? "Decrypted-lua" : tasks == Tasks.Encrypt ? "Encrypted-lua" : tasks == Tasks.Decompile ? "Decompiled-lua" : "Recompiled-lua"), Path.GetFileName(lua));
+                var luaPath = Path.Combine(PathMgr.Environment(tasks == Tasks.Decrypt ? "Decrypted_lua" : tasks == Tasks.Encrypt ? "Encrypted_lua" : tasks == Tasks.Decompile ? "Decompiled_lua" : "Recompiled_lua"), Path.GetFileName(lua));
                 if (tasks == Tasks.Decrypt || tasks == Tasks.Encrypt)
                 {
                     var bytes = File.ReadAllBytes(lua);
