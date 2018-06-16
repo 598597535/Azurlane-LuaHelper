@@ -8,7 +8,7 @@ You can grab the binary from the [releases page](https://github.com/k0np4ku/Azur
 1. Python 3.0 or newer
 2. NET Framework 3.5 or newer
 
-## Usage
+## Usage and examples
 ```
 Usage: Azurlane.exe <option> <path-to-file(s) or path-to-directory(s)>
 >!You can input multiple files or directory, and lua & assetbundle are the only acceptable file!<
@@ -24,7 +24,7 @@ Options:
       --repack               Repack all lua from AssetBundle
 ```
 
-## Usage Example
+### Examples
 ```
 $ azurlane --decrypt scripts
 [+] Decrypting scripts...<done>
