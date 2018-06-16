@@ -1,5 +1,5 @@
 # Azurlane-LuaHelper
-A helper tool to encrypt and decrypt, decompile and recompile Azurlane's lua files.
+A helper tool to encrypt and decrypt, decompile and recompile Azurlane's lua files, mainly to datamine game's data but also can be used as a tool to obtain unfair gameplay.
 
 ## Download
 You can grab the binary from the [releases page](https://github.com/k0np4ku/Azurlane-LuaHelper/releases), also take a look at [Azurlane-scripts-autopatcher](https://github.com/k0np4ku/Azurlane-scripts-autopatcher).
