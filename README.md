@@ -47,7 +47,7 @@ $ azurlane --recompile Decompiled_lua
 [+] Recompiling 0000001.lua.txt...<done>
 >!Recompile is done, output: C:\Users\Konpaku\Desktop\Azurlane-LuaHelper\Recompiled_lua
 
---Manual labor: Copying all modified from Recompiled_lua to Unity_Assets_Files\scripts\CAB-android, and thereafter repack it--
+--Manual labor: Copying all modified lua inside Recompiled_lua folder to Unity_Assets_Files\scripts\CAB-android folder, and thereafter repack it--
 
 $ azurlane --repack scripts
 [+] Repacking scripts...<done>
