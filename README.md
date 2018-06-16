@@ -63,12 +63,13 @@ $ azurlane --encrypt scripts
 2. The scripts is encrypted, let's decrypt it by opening command-line and type `Azurlane.exe --decrypt scripts`
 3. Next step, let's unpack all lua by typing `Azurlane.exe --unpack scripts`
    - The unpacked lua will be inside `Unity_Assets_Files\scripts-jp\CAB-android` folder
-4. All lua is encrypted, let's decrypt all of them and type `Azurlane.exe --unlock Unity_Assets_Files`
+4. All lua are encrypted, let's decrypt all of them and type `Azurlane.exe --unlock Unity_Assets_Files`
    - The decrypted lua will be inside `Decrypted_lua`
 5. Next step, let's decompile every lua and type `Azurlane.exe --decompile Decrypted_lua`
-   - If you don't want to decompile every lua, you can delete and left the one that you want to decompile
+   - If you don't want to decompile every lua, you can delete the one that you don't want to decompile
    - The decompiled lua will be inside `Decompiled_lua`
-6. Next step, let's edit some lua, now it's all on your own.
+6. Next step, let's edit some lua or do whatever you want
+   - Hint: Useful lua will have a bigger file size
 7. After you're done editing, let's recompile them and type `Azurlane.exe --recompile Decompiled_lua`
    - The recompiled lua will be inside `Recompiled_lua`
 8. Next step, let's copy all lua inside `Recompiled_lua` folder back to `Unity_Assets_Files\scripts-jp\CAB-android` folder
