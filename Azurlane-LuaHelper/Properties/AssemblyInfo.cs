@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Azurlane-LuaHelper")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("https://github.com/k0np4ku")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Azurlane-LuaHelper")]

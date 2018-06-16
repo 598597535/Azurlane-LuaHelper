@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{AE989EF6-F6F4-4023-AE31-ED50B03F79F5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Azurlane_LuaHelper</RootNamespace>
-    <AssemblyName>Azurlane-LuaHelper</AssemblyName>
+    <RootNamespace>Azurlane</RootNamespace>
+    <AssemblyName>Azurlane</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,8 +39,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssetBundle.cs" />
+    <Compile Include="Lua.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="PathMgr.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock" />
+    <None Include="Resources\Salt" />
+    <None Include="Resources\Unlock" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
