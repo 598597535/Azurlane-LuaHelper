@@ -10,7 +10,7 @@ namespace Azurlane
             var process = new Process();
             process.StartInfo.FileName = "cmd";
             process.StartInfo.Arguments = $"/c {argument}";
-            process.StartInfo.WorkingDirectory = PathMgr.ThirdParty();
+            process.StartInfo.WorkingDirectory = PathMgr.Thirdparty();
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.CreateNoWindow = true;
 
