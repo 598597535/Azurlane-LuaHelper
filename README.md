@@ -2,7 +2,7 @@
 A helper tool to encrypt and decrypt, decompile and recompile Azurlane's lua files.
 
 ## Download
-You can grab the binary from the [releases page](https://github.com/k0np4ku/Azurlane-LuaHelper/releases).
+You can grab the binary from the [releases page](https://github.com/k0np4ku/Azurlane-LuaHelper/releases), also take a look at [Azurlane-scripts-autopatcher](https://github.com/k0np4ku/Azurlane-scripts-autopatcher).
 
 ## Requirements
 1. Python 3.0 or newer
