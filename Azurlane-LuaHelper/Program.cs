@@ -26,7 +26,7 @@ namespace Azurlane
         private static void HelpMessage(OptionSet options)
         {
             Console.WriteLine("Usage: Azurlane.exe <option> <path-to-file(s) or path-to-directory(s)>");
-            Console.WriteLine(">!You can input multiple files or directory, and lua & assetbundle are the only acceptable file!<");
+            Console.WriteLine(">!You can input multiple files or directory, lua & assetbundle are the only acceptable file!<");
             Console.WriteLine();
             Console.WriteLine("Options:");
             options.WriteOptionDescriptions(Console.Out);
@@ -34,6 +34,9 @@ namespace Azurlane
 
         private static void Main(string[] args)
         {
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+
             var _showHelp = args.Length < 1;
 
             var options = new OptionSet()
