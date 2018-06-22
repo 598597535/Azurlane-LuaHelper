@@ -1,8 +1,8 @@
 # Azurlane-LuaHelper
-A helper tool to encrypt and decrypt, decompile and recompile Azurlane's lua files, mainly to datamine game's data but also can be used as a tool to obtain unfair gameplay.
+A helper tool to encrypt and decrypt, decompile and recompile Azurlane's lua files
 
 ## Download
-You can grab the binary from the [releases page](https://github.com/k0np4ku/Azurlane-LuaHelper/releases), also take a look at [Azurlane-scripts-autopatcher](https://github.com/k0np4ku/Azurlane-scripts-autopatcher).
+You can grab the binary from the [releases page](https://github.com/k0np4ku/Azurlane-LuaHelper/releases).
 
 ## Requirements
 1. Python 3.0 or newer
@@ -54,28 +54,6 @@ $ azurlane --repack scripts
 $ azurlane --encrypt scripts
 [+] Encrypting scripts...<done>
 ```
-## Steps for dummies
-1. Get a copy of scripts from Android/data/xxx/files/AssetBundles and move the said file to the same location as `Azurlane.exe`
-   - xxx:
-      - Japan: com.YoStarJP.AzurLane
-      - China (bilibili): com.bilibili.azurlane
-      - Korean: com.txwy.and.blhx
-2. The scripts is encrypted, let's decrypt it by opening command-line and type `Azurlane.exe --decrypt scripts`
-3. Next step, let's unpack all lua by typing `Azurlane.exe --unpack scripts`
-   - The unpacked lua will be inside `Unity_Assets_Files\scripts-jp\CAB-android` folder
-4. All lua are encrypted, let's decrypt all of them and type `Azurlane.exe --unlock Unity_Assets_Files`
-   - The decrypted lua will be inside `Decrypted_lua`
-5. Next step, let's decompile every lua and type `Azurlane.exe --decompile Decrypted_lua`
-   - If you don't want to decompile every lua, you can delete the one that you don't want to decompile
-   - The decompiled lua will be inside `Decompiled_lua`
-6. Next step, let's edit some lua or do whatever you want
-   - Hint: Useful lua will have a bigger file size
-7. After you're done editing, let's recompile them and type `Azurlane.exe --recompile Decompiled_lua`
-   - The recompiled lua will be inside `Recompiled_lua`
-8. Next step, let's copy all lua inside `Recompiled_lua` folder back to `Unity_Assets_Files\scripts-jp\CAB-android` folder
-9. Next step, let's repack the scripts and type `Azurlane.exe --repack scripts`
-   - Scripts will be repacked and overwrite the existing, make a backup beforehand if you don't want to lose the original file
-10. Next, scripts is repacked but left decrypted, let's encrypt it and type `Azurlane.exe --encrypt scripts`
-11. Done.
-12. ???
-13. Profit
+
+## System Locale
+The tool will not working properly if your System Locale is not set to English.
